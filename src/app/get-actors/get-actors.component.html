@@ -1,0 +1,28 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="col-md-6">
+    <h2> Actor Details</h2>
+    <!--<button class="btn btn-danger" (click)="addUser()"> Add User</button> -->
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>actor_Id</th>
+        <th>first_Name</th>
+        <th>last_Name</th>
+        <th>last_Update</th>
+       
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let actor of actors">
+        <td>{{actor.actor_Id}}</td>
+        <td>{{actor.first_Name}}</td>
+        <td>{{actor.last_Name}}</td>
+        <td>{{actor.last_Update}}</td>
+        
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
